@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff8ed"><title>Our Little Friendship Journey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="paper-grain"></div>
+<header class="topbar"><span class="tiny-heart">♥</span><span>our little corner</span><button id="soundBtn" aria-label="Play or pause music">♫</button><audio id="bgMusic" src="Khat.mp3" loop preload="none"></audio></header>
+<audio id="bgMusic" src="Khat.mp3" loop preload="none"></audio>
+<main id="app" class="app">
+<section class="screen active" id="welcome">
+  <div class="eyebrow">A LITTLE SOMETHING FOR YOU</div>
+  <div class="hero-art"><div class="sun"></div><div class="door"><span>✦</span><small>our story<br>starts here</small></div><div class="spark s1">✦</div><div class="spark s2">♡</div></div>
+  <p class="kicker">made with a little love</p><h1>It’s been quite a <em>friendship,</em> hasn’t it?</h1>
+  <p class="sub">So I made this tiny place to keep a few of our favourite things.</p>
+  <button class="primary" data-next="bond">Let’s take a look <span>→</span></button>
+  <div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <p class="micro">a little journey, just for you ♡</p>
+</section>
+<section class="screen" id="bond">
+  <div class="eyebrow">CHAPTER ONE · US</div><h2>First, our <em>friendship bond.</em></h2><div class="scribble">the good kind of bond ♡</div>
+  <div class="counter-card"><span class="counter-icon">✿</span><strong id="days"></strong><span>days of being in each other’s lives</span><div class="mini-stats"><div><b>∞</b><small>memories</small></div><div><b>100%</b><small>chaos</small></div><div><b>♡</b><small>good vibes</small></div></div></div>
+  <p class="sub">And somehow, there’s still more to add.</p><button class="primary" data-next="photos">Wanna see an angel! <span>→</span></button>
+  <div class="dots"><i></i><i class="on"></i><i></i><i></i><i></i></div>
+</section>
+<section class="screen" id="photos">
+  <div class="eyebrow">CHAPTER TWO · LITTLE MOMENTS</div><h2>Your <em>photos</em></h2><p class="sub">Tiny snapshots of memories I’d keep forever.</p>
+  <div class="polaroid"><img class="photo-image" src="img1.jpeg" alt="A favourite memory"><div class="photo-caption">can't take my eyes off you!</div></div>
+  <button class="primary" data-next="story">Next memory <span>→</span></button>
+  <div class="dots"><i></i><i></i><i class="on"></i><i></i><i></i></div>
+</section>
+<section class="screen" id="story">
+  <div class="eyebrow">CHAPTER THREE · PHOTO STORIES</div><h2>This photo felt <em>important...</em></h2>
+  <div class="story-frame"><video class="story-photo" id="storyPhoto" autoplay muted loop playsinline controls><source src="vdo1.mp4" type="video/mp4">Your browser does not support video.</video><p id="storyCaption">Some moments are ordinary until they become our favourites.</p></div>
+  <div class="story-controls"><button class="round" id="prevStory" aria-label="Previous story">‹</button><span id="storyNum">01 / 03</span><button class="round" id="nextStory" aria-label="Next story">›</button></div>
+  <button class="primary" data-next="letter">There’s one more thing <span>→</span></button>
+  <div class="dots"><i></i><i></i><i class="on"></i><i></i><i></i></div>
+</section>
+<section class="screen" id="letter">
+  <div class="eyebrow">CHAPTER FOUR · JUST FOR YOU</div><h2>A letter, <em>sealed just for you.</em></h2><p class="sub">A few words I wanted you to have.</p>
+  <button class="envelope" id="openLetter" aria-label="Open letter"><span class="seal">♥</span><span class="envelope-label">tap to open</span></button>
+  <article class="letter-content hidden" id="letterContent"><div class="letter-top">Dear favourite human,</div><p>Thank you for being the most interesting part of my boring story. Here's something again specialy for someone so special for me:
+ <p>Kaan mai jhumka dali,<br>
+    Haathon par pehen k bali<br>
+    Chand si yeh soorat aur,<br>
+    Meethi si bol wali...<br>
+    Khas tere liye yeah pehgam hai sahi-<br>
+    Dekha hai noor kahi,<br>
+    Dekha hai hoor kahi.<br>
+    Naa dekhi aisi sorrat, naa sirat kahi!<br>
+    Khuda kasam...<br>
+    Naa dekhi aisi ankhoon mai saroor kahi!!</p>
+  </p><p>I hope life gives you a hundred reasons to smile. And </p><p class="letter-sign">Always cheering for you, ♡</p></article>
+  <button class="primary" data-next="message">Keep going <span>→</span></button>
+  <div class="dots"><i></i><i></i><i></i><i class="on"></i><i></i></div>
+</section>
+<section class="screen" id="message">
+  <div class="eyebrow">CHAPTER FIVE · A LITTLE NOTE</div><h2>Why I <em>wrote you this...</em></h2><div class="note"><span class="note-pin">✦</span><p>“I hope you never forget how much light you bring into the lives around you.”</p><div class="note-hearts">♥　♡　♥</div></div>
+  <p class="sub">Because some things deserve to be said out loud.</p><button class="primary" data-next="promise">One last little thing <span>→</span></button>
+  <div class="dots"><i></i><i></i><i></i><i></i><i class="on"></i></div>
+</section>
+<section class="screen" id="promise">
+  <div class="eyebrow">THE FINAL CHAPTER · A PROMISE</div><h2>Tick each promise, <em>then sign.</em></h2><p class="sub">A tiny friendship pact. No pressure, just heart.</p>
+  <div class="promise-list">
+  <label><input type="checkbox"> <span class="check-icon">✓</span><span>We’ll make time for the little things.</span></label>
+  <label><input type="checkbox"> <span class="check-icon">✓</span><span>We’ll keep laughing at the dumbest jokes.</span></label>
+  <label><input type="checkbox"> <span class="check-icon">✓</span><span>We’ll cheer each other on, always.</span></label>
+  <label><input type="checkbox"> <span class="check-icon">✓</span><span>We’ll make memories together.</span></label>
+  <label><input type="checkbox"> <span class="check-icon">✓</span><span>We’ll be honest, kind, and real.</span></label>
+  </div>
+  <label class="sign-label" for="signature">Your signature</label><input class="signature" id="signature" placeholder="Type your name here..." maxlength="32">
+  <button class="primary" id="finishBtn">Seal our promise ♡</button>
+  <div class="final-stamp hidden" id="finalStamp">PROMISE SEALED ♥</div><p class="micro">made for you, with all the good things ♡</p>
+  <button class="primary" data-next="proposal">One last surprise <span>→</span></button>
+</section>
+<section class="screen" id="proposal">
+  <div class="eyebrow">ONE LAST THING · FROM MY HEART</div>
+  <div class="proposal-content"><div class="proposal-heart">♥</div>
+  <p class="proposal-small">I've been wanting to ask you something...</p>
+  <h2>Will you be <em>my girl?</em></h2>
+  <p class="proposal-message">
+      Somewhere between all the little moments, smiles, and conversations,
+      you became someone really special to me.
+      <br><br>
+      And now, I don't want to leave this unsaid anymore.
+      I want to make more memories with you, be there for you,
+      and see where this beautiful little story takes us.
+      <br><br>
+      So, there's just one question left...
+    </p>
+  <div class="proposal-question">Will you be my girlfriend? ♡</div>
+  <div class="proposal-buttons"><button class="primary proposal-yes" id="proposalYes">Yes, I'd love to! ♥</button>
+  <button class="proposal-later" id="proposalLater">I need a moment ♡</button></div>
+  <p class="proposal-note" id="proposalNote">Whatever your answer, I'm glad I got to tell you. ♡</p>
+  <div class="proposal-success" id="proposalSuccess" hidden>
+  <div class="success-heart">♥</div>
+  <h2>You just made me <em>so happy!</em></h2>
+  <p>Here's to us, and all the little moments still waiting for us. ♡</p>
+  <div class="success-decoration">♡ &nbsp; ♡ &nbsp; ♡</div>
+  </div>
+  </div>
+  <div class="dots">
+    <i></i><i></i><i></i><i></i><i class="on"></i>
+  </div>
+</section>
+
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCh3hh5rQRRGybE4bmIWuaZzuVyoeCUWS8",
+    authDomain: "our-little-corner-d679e.firebaseapp.com",
+    projectId: "our-little-corner-d679e",
+    storageBucket: "our-little-corner-d679e.firebasestorage.app",
+    messagingSenderId: "350780117041",
+    appId: "1:350780117041:web:18bc7d98aadb288a6a4510"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
+<script src="script.js"></script>
+</body></html>
